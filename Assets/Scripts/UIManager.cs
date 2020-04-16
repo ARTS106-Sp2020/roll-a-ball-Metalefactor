@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
   public Animator startButton;
+  public Animator restartButton;
   public Animator instructionsButton;
   public Animator exitButton;
+  public Animator exitButtonAlt;
   public Animator dialog;
-  public Animator contentPanel;
 
   public void OpenSettings()
 {

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -16,7 +17,6 @@ public class PlayerController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         count = 0;
         SetCountText ();
-        winText.text = "";
     }
 
     void FixedUpdate ()
@@ -44,8 +44,7 @@ public class PlayerController : MonoBehaviour {
         countText.text = "Count: " + count.ToString ();
         if (count >= 8)
         {
-            winText.text = "You winned.\n\n\nthats the thing that you say"
-            + " right?";
+            SceneManager.LoadScene("End");
         }
     }
 }
