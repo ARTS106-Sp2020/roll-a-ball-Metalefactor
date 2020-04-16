@@ -44,7 +44,8 @@ public class PlayerController : MonoBehaviour {
         countText.text = "Count: " + count.ToString ();
         if (count >= 8)
         {
-            winText.text = "You Win!";
+            winText.text = "You winned.\n\n\nthats the thing that you say"
+            + " right?";
         }
     }
 }
